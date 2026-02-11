@@ -1,0 +1,134 @@
+import { SKILLS } from "@/components/constants/data";
+import Image from "next/image";
+
+const SKILL_ICONS: Record<string, string> = {
+  HTML: "html",
+  CSS: "css",
+  JavaScript: "js",
+  TypeScript: "ts",
+  React: "react",
+  "Next.js": "nextjs",
+  "Vue.js": "vue",
+  Angular: "angular",
+  Redux: "redux",
+  "Tailwind CSS": "tailwind",
+  Bootstrap: "bootstrap",
+  Sass: "sass",
+  Less: "less",
+  jQuery: "jquery",
+  "Node.js": "nodejs",
+  "Express.js": "express",
+  "Nest.js": "nestjs",
+  Prisma: "prisma",
+  Django: "django",
+  Flask: "flask",
+  "Spring Boot": "spring",
+  "Ruby on Rails": "rails",
+  Laravel: "laravel",
+  "ASP.NET": "dotnet",
+  FastAPI: "fastapi",
+  MongoDB: "mongodb",
+  MySQL: "mysql",
+  PostgreSQL: "postgresql",
+  SQLite: "sqlite",
+  Redis: "redis",
+  Firebase: "firebase",
+  Supabase: "supabase",
+  C: "c",
+  "C++": "cpp",
+  "C#": "cs",
+  Java: "java",
+  Python: "py",
+  Go: "go",
+  Rust: "rust",
+  Ruby: "ruby",
+  PHP: "php",
+  Kotlin: "kotlin",
+  Swift: "swift",
+  Dart: "dart",
+  Scala: "scala",
+  AWS: "aws",
+  Azure: "azure",
+  GCP: "gcp",
+  Docker: "docker",
+  Kubernetes: "kubernetes",
+  Vercel: "vercel",
+  Render: "render",
+  Railway: "railway",
+  Netlify: "netlify",
+  Heroku: "heroku",
+  "GitHub Actions": "githubactions",
+  Jenkins: "jenkins",
+  "VS Code": "vscode",
+  Cursor: "cursor",
+  Git: "git",
+  GitHub: "github",
+  GitLab: "gitlab",
+  Bitbucket: "bitbucket",
+  Postman: "postman",
+  Swagger: "swagger",
+  PowerShell: "powershell",
+  Figma: "figma",
+  Vite: "vite",
+  Webpack: "webpack",
+  Babel: "babel",
+  Jest: "jest",
+  Cypress: "cypress",
+  Linux: "linux",
+  Windows: "windows",
+  MacOS: "apple",
+};
+
+const SkillBadge = ({ skill }: { skill: string }) => {
+  const iconSlug = SKILL_ICONS[skill];
+  if (!iconSlug) return <span className="skill-chip">{skill}</span>;
+
+  // Icons known to be missing in skillicons.dev but available in simpleicons.org
+  const isSimpleIcon = ["render", "railway", "swagger", "cursor"].includes(iconSlug);
+  
+  const iconUrl = isSimpleIcon 
+    ? `https://cdn.simpleicons.org/${iconSlug}` // branded colors
+    : `https://skillicons.dev/icons?i=${iconSlug}`;
+
+  return (
+    <span className="skill-chip">
+      <Image
+        src={iconUrl}
+        alt={`${skill} icon`}
+        width={16}
+        height={16}
+        className="w-4 h-4"
+        unoptimized
+      />
+      {skill}
+    </span>
+  );
+};
+
+const Skills = () => {
+  return (
+    <section className="py-6 space-y-4">
+      <h2 className="section-title w-full">Technical skills.</h2>
+      <div className="glass-panel hover-lift space-y-5">
+        {Object.entries(SKILLS).map(([key, skills]) => (
+          <div
+            key={key}
+            className="rounded-2xl border p-4 bg-[hsl(var(--muted)/0.35)] transition-all hover:border-[hsl(var(--border-hover))]"
+            style={{ borderColor: "hsl(var(--border) / 0.6)" }}
+          >
+            <h3 className="text-sm uppercase tracking-[0.35em] text-muted-foreground mb-3">
+              {"< " + key + " />"}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {skills.map((skill) => (
+                <SkillBadge key={skill} skill={skill} />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Skills;
