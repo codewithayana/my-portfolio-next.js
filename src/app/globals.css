@@ -29,16 +29,16 @@
   }
 
   .dark {
-    --background: 270 50% 3%; /* Deepest Purple-Black */
-    --foreground: 270 20% 90%; /* Soft White */
-    --muted: 270 30% 12%; /* Muted Purple-Black */
-    --muted-foreground: 270 10% 60%; /* Muted Lilac-Grey */
-    --hover-bg: 270 40% 10%; /* Dark Purple Hover */
-    --border: 270 20% 15%; /* Dark Purple Border */
-    --border-hover: 270 100% 63%; /* Vibrant Electric Purple */
-    --accent: 270 95% 58%; /* Main Purple Accent */
-    --accent-secondary: 290 90% 55%; /* Secondary Pink/Purple */
-    --grid-line: 270 20% 20%;
+    --background: 270 50% 5%; /* Deepest Purple-Black */
+    --foreground: 270 20% 95%; /* Pale Lavender-White */
+    --muted: 270 30% 15%; /* Muted Deep Purple */
+    --muted-foreground: 270 15% 70%; /* Lavender Grey */
+    --hover-bg: 270 40% 12%; /* Dark Purple Hover */
+    --border: 270 25% 20%; /* Dark Lavender-Purple Border */
+    --border-hover: 265 90% 75%; /* Soft Lavender Glow */
+    --accent: 270 85% 60%; /* Rich Vivid Purple */
+    --accent-secondary: 260 90% 80%; /* Bright Lavender/Lilac */
+    --grid-line: 270 20% 25%;
   }
 
   html {
@@ -79,21 +79,21 @@
 
   .dark body,
   body.dark {
-    background-color: #05010a; /* Nearly Black Purple */
+    background-color: #0f021f; /* Nearly Black Purple */
     background-image:
       radial-gradient(
         circle at 15% 50%,
-        #2e1065, /* Deep Violet */
+        #3d1c7a, /* Deep Violet */
         transparent 50%
       ),
       radial-gradient(
         circle at 85% 30%,
-        rgba(88, 28, 135, 0.15), /* Purple-900 */
+        rgba(167, 139, 250, 0.12), /* Soft Lavender */
         transparent 50%
       ),
       radial-gradient(
         circle at 90% 90%,
-        rgba(147, 51, 234, 0.05), /* Purple-600 */
+        rgba(139, 92, 246, 0.08), /* Violet/Purple Mix */
         transparent 40%
       );
     background-attachment: fixed;
@@ -264,7 +264,7 @@
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: var(--radius);
     backdrop-filter: blur(14px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Stronger shadow for projection */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.062); /* Stronger shadow for projection */
     transition:
       transform 300ms ease,
       border-color 300ms ease,
@@ -274,8 +274,8 @@
   }
 
   .box:hover {
-    border-color: rgba(2, 132, 199, 0.5);
-    box-shadow: 0 10px 40px rgba(2, 132, 199, 0.15);
+    border-color: rgba(5, 160, 238, 0.5);
+    box-shadow: 0 10px 40px rgba(1, 56, 83, 0.15);
     transform: translateY(-3px);
   }
 
