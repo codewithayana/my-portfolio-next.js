@@ -5,12 +5,12 @@ import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { Terminal, Cpu, Wifi, Disc, Keyboard } from 'lucide-react';
 
 const ASCII_ART = `
- ██████╗ █████╗ ███╗   ██╗ █████╗ 
-██╔════╝██╔══██╗████╗  ██║██╔══██╗
-╚█████╗ ███████║██╔██╗ ██║███████║
- ╚═══██╗██╔══██║██║╚██╗██║██╔══██║
-██████╔╝██║  ██║██║ ╚████║██║  ██║
-╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
+ █████╗ ██╗   ██╗ █████╗ ███╗   ██╗ █████╗ 
+██╔══██╗╚██╗ ██╔╝██╔══██╗████╗  ██║██╔══██╗
+███████║ ╚████╔╝ ███████║██╔██╗ ██║███████║
+██╔══██║  ╚██╔╝  ██╔══██║██║╚██╗██║██╔══██║
+██║  ██║   ██║   ██║  ██║██║ ╚████║██║  ██║
+╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
 `;
 
 interface LogEntry {
@@ -255,7 +255,7 @@ export function TerminalWindow() {
         addResponse([
           <div key="whoami" className="flex flex-col gap-1">
             <span className="font-bold text-foreground">
-              <Typewriter text="sana@workspace" speed={5} />
+              <Typewriter text="ayana@workspace" speed={5} />
             </span>
             <span className="text-muted-foreground">
               <Typewriter
@@ -443,7 +443,7 @@ export function TerminalWindow() {
           </div>
           <div className="flex items-center gap-2 text-[10px] font-medium tracking-wider text-muted-foreground opacity-60">
             <Terminal className="h-3 w-3" />
-            <span>sana:~/welcome</span>
+            <span>ayana:~/welcome</span>
           </div>
           <span className="flex shrink-0 items-center gap-1.5 rounded-md border border-accent/30 bg-accent/10 px-2 py-0.5 text-[9px] font-medium tracking-wide text-accent sm:text-[10px]">
             <Keyboard className="h-3 w-3 shrink-0" />
@@ -522,7 +522,7 @@ export function TerminalWindow() {
                 </motion.span>
                 <span className="shrink-0 whitespace-nowrap">
                   <span className="hidden text-accent sm:inline">
-                    sana
+                    ayana
                   </span>
                   <span className="hidden text-muted-foreground sm:inline">:</span>
                   <span className="hidden text-accent-secondary sm:inline">~</span>

@@ -13,12 +13,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shasbin.in"),
-  title: "Sana Illikkal - Full Stack Developer | Backend Expert",
+  metadataBase: new URL("https://ayana-dinesh.com"),
+  title: "Ayana Dinesh - Full Stack Developer | Backend Expert",
   description:
-    "Portfolio of Sana Shaju, a Full Stack Developer from Irinjalakuda, Thrissur, India. Expert in Node.js, Express, React, Next.js, and scaling secure backend systems.",
+    "Portfolio of Ayana Dinesh, a Full Stack Developer from Irinjalakuda, Thrissur, India. Expert in Node.js, Express, React, Next.js, and scaling secure backend systems.",
   keywords: [
-    "Sana Shaju",
+    "Ayana Dinesh",
     "Full Stack Developer",
     "Full Stack Development",
     "MERN Stack",
@@ -31,35 +31,35 @@ export const metadata: Metadata = {
     "Kerala",
     "Software Engineer",
   ],
-  authors: [{ name: "Sana Shaju", url: "https://github.com/sanashaju" }],
-  creator: "Sana Shaju",
-  publisher: "Sana Shaju",
+  authors: [{ name: "Ayana Dinesh", url: "https://github.com/codewithayana" }],
+  creator: "Ayana Dinesh",
+  publisher: "Ayana Dinesh",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com", // Recommendation: update this to your actual domain
-    title: "Sana Shaju - Full Stack Developer Portfolio",
+    url: "https://ayana-dinesh.com", // Recommendation: update this to your actual domain
+    title: "Ayana Dinesh - Full Stack Developer Portfolio",
     description:
-      "Explore the projects and skills of Sana Shaju. Specializing in scalable backend systems and modern frontend interfaces.",
-    siteName: "Sana Shaju Portfolio",
+      "Explore the projects and skills of Ayana Dinesh. Specializing in scalable backend systems and modern frontend interfaces.",
+    siteName: "Ayana Dinesh Portfolio",
     images: [
       {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Sana Shaju Portfolio",
+        alt: "Ayana Dinesh Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sana Shaju - Full Stack Developer",
+    title: "Ayana Dinesh - Full Stack Developer",
     description:
-      "Explore the projects and skills of Sana Shaju. Specializing in scalable backend systems and modern frontend interfaces.",
-    creator: "@sanashaju  ",
+      "Explore the projects and skills of Ayana Dinesh. Specializing in scalable backend systems and modern frontend interfaces.",
+    creator: "@ayanadinesh",
     images: ["/twitter-image.png"],
   },
   robots: {
@@ -105,12 +105,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Sana Shaju",
-              url: "https://your-domain.com",
+              name: "Ayana Dinesh",
+              url: "https://ayana-dinesh.com",
               jobTitle: "Full Stack Developer",
               description:
                 "Full Stack Developer specializing in Node.js, Express, and scalable backend architectures.",
-              image: "https://your-domain.com/profile-image.jpg",
+              image: "https://ayana-dinesh.com/profile-image.jpg",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Irinjalakuda, Thrissur",
@@ -136,9 +136,9 @@ export default function RootLayout({
                 "Docker",
               ],
               sameAs: [
-                "https://github.com/sanashaju",
-                "https://www.linkedin.com/in/sanashaju/",
-                "https://leetcode.com/u/sanaillikkal/",
+                "https://github.com/codewithayana",
+                "https://www.linkedin.com/in/ayanadinesh/",
+                "https://leetcode.com/u/ayanadinesh/",
               ],
             }),
           }}
