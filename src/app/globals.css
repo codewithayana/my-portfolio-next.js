@@ -79,16 +79,16 @@
 
   .dark body,
   body.dark {
-    background-color: #0f021f; /* Nearly Black Purple */
+    background-color: #030007; /* Nearly Black Purple */
     background-image:
       radial-gradient(
         circle at 15% 50%,
-        #3d1c7a, /* Deep Violet */
+        #3e2669, /* Deep Violet */
         transparent 50%
       ),
       radial-gradient(
         circle at 85% 30%,
-        rgba(167, 139, 250, 0.12), /* Soft Lavender */
+        rgba(187, 155, 250, 0.12), /* Soft Lavender */
         transparent 50%
       ),
       radial-gradient(
@@ -275,7 +275,7 @@
 
   .box:hover {
     border-color: rgba(5, 160, 238, 0.5);
-    box-shadow: 0 10px 40px rgba(1, 56, 83, 0.15);
+    box-shadow: 0 10px 40px rgba(4, 161, 240, 0.15);
     transform: translateY(-3px);
   }
 
