@@ -79,21 +79,21 @@
 
   .dark body,
   body.dark {
-    background-color: #030007; /* Nearly Black Purple */
+    background-color: #620b7494; /* Nearly Black Purple */
     background-image:
       radial-gradient(
         circle at 15% 50%,
-        #3e2669, /* Deep Violet */
+        #08000ae1, /* Deep Violet */
         transparent 50%
       ),
       radial-gradient(
         circle at 85% 30%,
-        rgba(187, 155, 250, 0.12), /* Soft Lavender */
+        rgba(37, 1, 22, 0.849), /* Soft Lavender */
         transparent 50%
       ),
       radial-gradient(
         circle at 90% 90%,
-        rgba(139, 92, 246, 0.08), /* Violet/Purple Mix */
+        rgba(54, 3, 37, 0.89), /* Violet/Purple Mix */
         transparent 40%
       );
     background-attachment: fixed;
@@ -258,8 +258,8 @@
   .box {
     background: linear-gradient(
       145deg,
-      rgba(255, 255, 255, 0.07),
-      rgba(255, 255, 255, 0.03)
+      rgba(15, 0, 0, 0.07),
+      rgba(15, 0, 0, 0.03)
     );
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: var(--radius);
@@ -274,8 +274,8 @@
   }
 
   .box:hover {
-    border-color: rgba(5, 160, 238, 0.5);
-    box-shadow: 0 10px 40px rgba(4, 161, 240, 0.15);
+    border-color: rgba(2, 25, 36, 0.904);
+    box-shadow: 0 10px 40px rgba(56, 189, 248, 0.4);
     transform: translateY(-3px);
   }
 
@@ -293,7 +293,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(80, 78, 78, 0.05),
+      rgba(229, 4, 250, 0.925),
       transparent
     );
     transition: left 0.5s ease;
@@ -338,16 +338,16 @@
     position: relative;
     background: linear-gradient(
       145deg,
-      rgba(255, 255, 255, 0.07),
-      rgba(255, 255, 255, 0.03)
+      rgba(2, 2, 2, 0.966),
+      rgba(209, 19, 247, 0.096)
     );
-    border: 1px solid rgba(8, 0, 0, 0.12);
+    border: 1px solid rgba(8, 8, 8, 0.048);
     border-radius: calc(var(--radius) * 1.1);
     padding: clamp(1.5rem, 3vw, 2.5rem);
     backdrop-filter: blur(20px);
     box-shadow: 
-  inset 0 0 40px rgba(147, 51, 234, 0.08),
-  0 12px 35px rgba(0, 0, 0, 0.45);
+  inset 0 0 40px rgba(9, 1, 19, 0.08),
+  0 12px 35px rgba(14, 0, 0, 0.274);
 
 
     overflow: hidden;
@@ -385,14 +385,14 @@
   .tilt-card {
     position: relative;
     border-radius: calc(var(--radius) * 1.1);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(54, 52, 52, 0.12);
     background: linear-gradient(
       145deg,
-      rgba(255, 255, 255, 0.07),
-      rgba(255, 255, 255, 0.03)
+      rgba(107, 3, 107, 0.863),
+      rgba(32, 32, 32, 0.589)
     );
     backdrop-filter: blur(14px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(48, 47, 47, 0.432);
     transition:
       transform 350ms ease,
       border-color 250ms ease,
@@ -418,7 +418,7 @@
   .tilt-card:hover {
     transform: translateY(-10px) rotate3d(1, -1, 0, 6deg);
     border-color: hsl(var(--accent));
-    box-shadow: 0 20px 50px #00050833;
+    box-shadow: 0 20px 50px #00050848;
   }
 
   .tilt-card:hover::before {
@@ -584,7 +584,7 @@
       rgba(14, 13, 13, 0.07),
       rgba(12, 12, 12, 0.03)
     );
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.178);
     position: relative;
     overflow: hidden;
     transition:
