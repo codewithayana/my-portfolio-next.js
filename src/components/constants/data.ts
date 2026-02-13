@@ -132,5 +132,19 @@ export const EDUCATION = [
   },
   
 
+    {
+    degree: "Senior Secondary (Plus Two)",
+    institution: " VHSS KARALAM",
+    institutionLink: "",
+    period: " Jul 2017 - Mar 2019 ",
+  },
+
+  {
+    degree: "Secondary (SSLC)",
+    institution: " VHSS KARALAM",
+    institutionLink: "",
+    period: " Jul 2016 - Mar 2017 ",
+  },
+
   // Add more education as needed
 ];

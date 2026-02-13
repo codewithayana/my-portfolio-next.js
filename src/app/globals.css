@@ -79,21 +79,21 @@
 
   .dark body,
   body.dark {
-    background-color: #620b7494; /* Nearly Black Purple */
+    background-color: #42043f94; /* Nearly Black Purple */
     background-image:
       radial-gradient(
         circle at 15% 50%,
-        #08000ae1, /* Deep Violet */
+        #510b63e1, /* Deep Violet */
         transparent 50%
       ),
       radial-gradient(
         circle at 85% 30%,
-        rgba(37, 1, 22, 0.849), /* Soft Lavender */
+        rgba(80, 4, 48, 0.849), /* Soft Lavender */
         transparent 50%
       ),
       radial-gradient(
         circle at 90% 90%,
-        rgba(54, 3, 37, 0.89), /* Violet/Purple Mix */
+        rgb(27, 1, 21), /* Violet/Purple Mix */
         transparent 40%
       );
     background-attachment: fixed;
