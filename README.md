@@ -15,7 +15,7 @@
 
 **A modern, responsive, and feature-rich portfolio website built with Next.js 15, React 19, and TypeScript**
 
-[Report Bug](https://github.com/shasbinas/my-portfolio-nextjs/issues) • [Request Feature](https://github.com/shasbinas/my-portfolio-nextjs/issues)
+[Report Bug](https://github.com/codewithayana/my-portfolio-next.js/issues) • [Request Feature](https://github.com/codewithayana/my-portfolio-next.js/issues)
 
 </div>
 
@@ -156,8 +156,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/sanashaju/my-portfolio-nextjs.git
-   cd my-portfolio-nextjs
+   git clone https://github.com/codewithayana/my-portfolio-next.js.git
+   cd my-portfolio-next.js
    ```
 
 2. **Install dependencies**
@@ -357,16 +357,16 @@ This project is licensed under the ISC License. See the [LICENSE](LICENSE) file 
 
 ## 📧 Contact
 
-**Shasbin AS** - Backend Developer
+**Ayana  AS** - Backend Developer
 
-- 📧 Email: [sanashajuillikkal@gmail.com](mailto:sanashajuillikkal@gmail.com)
-- 💼 LinkedIn: [sanashaju](https://www.linkedin.com/in/sanashaju)
-- 🐙 GitHub: [@sanashaju](https://github.com/sanashaju)
-- 💻 LeetCode: [@sanashaju](https://leetcode.com/u/sanaillikkal)
-- 📱 Phone: +91 77367 09420
+- 📧 Email: [codewithayana@gmail.com](mailto:sanashajuillikkal@gmail.com)
+- 💼 LinkedIn: [Ayana Dinesh](www.linkedin.com/in/ayanadinesh)
+- 🐙 GitHub: [@codewithayana](https://github.com/codewithayana)
+- 💻 LeetCode: [@Ayana Dinesh](https://leetcode.com/u/ayanadinesh/)
+- 📱 Phone: +91 8129407173
 - 📄 Resume: [View Resume](https://drive.google.com/file/d/1lf2eQpjK10k9CFMpI7HCLGmskxRb3hdT/view?usp=sharing)
 
-**Project Link:** [https://github.com/sanashaju/my-portfolio-nextjs](https://github.com/sanashaju/my-portfolio-nextjs)
+**Project Link:** [https://github.com/codewithayana/my-portfolio-next.js](https://github.com/codewithayana/my-portfolio-next.js)
 
 ---
 
@@ -388,6 +388,6 @@ This project is licensed under the ISC License. See the [LICENSE](LICENSE) file 
 
 **⭐ If you like this project, give it a star on [GitHub](https://github.com/sanashaju/my-portfolio-nextjs)! ⭐**
 
-Made with ❤️ by [Sana Shaju](https://github.com/sanashaju)
+Made with ❤️ by [Ayana Dinesh](https://github.com/codewithayana)
 
 </div>
