@@ -16,7 +16,7 @@ export const ABOUT_ME = {
 
 export const USER_NAMES = {
   githubUsername: "codewithayana",
-  leetcodeUsername: "Ayana Dinesh", // remove or keep blank if you don't have a LeetCode profile
+  leetcodeUsername: "ayanadinesh", // remove or keep blank if you don't have a LeetCode profile
   //   hashnodeUsername: "your-hashnode-username", // remove or keep blank if you don't have a Hashnode profile
 };
 
@@ -30,7 +30,7 @@ export const SOCIAL_LINKS = {
   email: "mailto:codewithayana@gmail.com",
   // blog: "https://yourblog.com", // remove if you don't have a blog
   resume:
-    "https://drive.google.com/file/d/1lf2eQpjK10k9CFMpI7HCLGmskxRb3hdT/view?usp=sharing",
+    "/Ayana Full Stack 2026.pdf",
   phone: "+91 8129407173",
   whatsapp: "https://wa.me/ 8129407173",
 };
@@ -86,7 +86,7 @@ export const PROJECTS = [
   {
     id: 2,
     name: "Lumina-Skin-ecommerce",
-    category: "E-COMMERCE",
+    category: "Full Stack",
     description:
       "**Problem:** Many skincare e-commerce websites lack a premium aesthetic and a smooth, trustworthy shopping experience.\n**Impact:** This leads to high bounce rates, low customer confidence, and reduced conversions — especially in the competitive luxury skincare market.\n**Solution:** Lumina Skin is a luxury skincare e-commerce platform designed to deliver an elegant, seamless digital shopping journey. It features personalized wishlist management, a frictionless cart and checkout flow, and a powerful admin system for effortless product and inventory management — ensuring a refined experience for both customers and brand owners.",
     tech: ["Node.js", "JavaScript", "Bootstrap 5", "Handlebars", "Express.js", "MongoDB"],

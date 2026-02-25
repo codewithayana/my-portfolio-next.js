@@ -29,16 +29,16 @@
   }
 
   .dark {
-    --background: 270 50% 5%; /* Deepest Purple-Black */
-    --foreground: 270 20% 95%; /* Pale Lavender-White */
-    --muted: 270 30% 15%; /* Muted Deep Purple */
-    --muted-foreground: 270 15% 70%; /* Lavender Grey */
-    --hover-bg: 270 40% 12%; /* Dark Purple Hover */
-    --border: 270 25% 20%; /* Dark Lavender-Purple Border */
-    --border-hover: 265 90% 75%; /* Soft Lavender Glow */
-    --accent: 270 85% 60%; /* Rich Vivid Purple */
-    --accent-secondary: 260 90% 80%; /* Bright Lavender/Lilac */
-    --grid-line: 270 20% 25%;
+    --background: 260 65% 5%;
+    --foreground: 288 60% 96%;
+    --muted: 262 40% 12%;
+    --muted-foreground: 279 28% 72%;
+    --hover-bg: 284 80% 24%;
+    --border: 270 30% 20%;
+    --border-hover: 297 85% 65%;
+    --accent: 284 80% 58%;
+    --accent-secondary: 312 80% 60%;
+    --grid-line: 265 28% 18%;
   }
 
   html {
@@ -79,24 +79,19 @@
 
   .dark body,
   body.dark {
-    background-color: #42043f94; /* Nearly Black Purple */
+    background-color: hsl(var(--background));
     background-image:
       radial-gradient(
-        circle at 15% 50%,
-        #510b63e1, /* Deep Violet */
-        transparent 50%
+        circle at 18% 25%,
+        hsl(var(--accent) / 0.4),
+        transparent 55%
       ),
       radial-gradient(
-        circle at 85% 30%,
-        rgba(80, 4, 48, 0.849), /* Soft Lavender */
-        transparent 50%
+        circle at 80% 5%,
+        hsl(var(--accent-secondary) / 0.3),
+        transparent 45%
       ),
-      radial-gradient(
-        circle at 90% 90%,
-        rgb(27, 1, 21), /* Violet/Purple Mix */
-        transparent 40%
-      );
-    background-attachment: fixed;
+      linear-gradient(135deg, hsl(258 65% 5%), hsl(265 60% 8%));
   }
 
   body::before {
@@ -256,56 +251,20 @@
   }
 
   .box {
-    background: linear-gradient(
-      145deg,
-      rgba(15, 0, 0, 0.07),
-      rgba(15, 0, 0, 0.03)
-    );
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: hsl(var(--muted) / 0.6);
+    border: 1px solid hsl(var(--border) / 0.5);
     border-radius: var(--radius);
-    backdrop-filter: blur(14px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.062); /* Stronger shadow for projection */
+    backdrop-filter: blur(12px);
     transition:
-      transform 300ms ease,
-      border-color 300ms ease,
-      box-shadow 300ms ease;
-    position: relative;
-    overflow: hidden;
+      transform 250ms ease,
+      border-color 200ms ease,
+      box-shadow 200ms ease;
   }
 
   .box:hover {
-    border-color: rgba(2, 25, 36, 0.904);
-    box-shadow: 0 10px 40px rgba(56, 189, 248, 0.4);
+    border-color: hsl(var(--border-hover));
+    box-shadow: 0 10px 40px hsl(var(--accent) / 0.15);
     transform: translateY(-3px);
-  }
-
-  /* Attractive hover trick for cards */
-  .box::before,
-  .glass-panel::before,
-  .tilt-card::before,
-  .contact-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(229, 4, 250, 0.925),
-      transparent
-    );
-    transition: left 0.5s ease;
-    z-index: 1;
-    pointer-events: none;
-  }
-
-  .box:hover::before,
-  .glass-panel:hover::before,
-  .tilt-card:hover::before,
-  .contact-card:hover::before {
-    left: 100%;
   }
 
   .section-title {
@@ -336,20 +295,14 @@
 
   .glass-panel {
     position: relative;
-    background: linear-gradient(
-      145deg,
-      rgba(2, 2, 2, 0.966),
-      rgba(209, 19, 247, 0.096)
-    );
-    border: 1px solid rgba(8, 8, 8, 0.048);
+    background: hsl(var(--muted) / 0.6);
+    border: 1px solid hsl(var(--border) / 0.5);
     border-radius: calc(var(--radius) * 1.1);
     padding: clamp(1.5rem, 3vw, 2.5rem);
-    backdrop-filter: blur(20px);
-    box-shadow: 
-  inset 0 0 40px rgba(9, 1, 19, 0.08),
-  0 12px 35px rgba(14, 0, 0, 0.274);
-
-
+    backdrop-filter: blur(18px);
+    box-shadow:
+      0 30px 80px hsl(var(--accent) / 0.15),
+      inset 0 0 20px hsl(var(--muted) / 0.4);
     overflow: hidden;
   }
 
@@ -385,14 +338,9 @@
   .tilt-card {
     position: relative;
     border-radius: calc(var(--radius) * 1.1);
-    border: 1px solid rgba(54, 52, 52, 0.12);
-    background: linear-gradient(
-      145deg,
-      rgba(107, 3, 107, 0.863),
-      rgba(32, 32, 32, 0.589)
-    );
-    backdrop-filter: blur(14px);
-    box-shadow: 0 8px 32px rgba(48, 47, 47, 0.432);
+    border: 1px solid hsl(var(--border) / 0.45);
+    background: hsl(var(--muted) / 0.55);
+    backdrop-filter: blur(18px);
     transition:
       transform 350ms ease,
       border-color 250ms ease,
@@ -417,8 +365,8 @@
 
   .tilt-card:hover {
     transform: translateY(-10px) rotate3d(1, -1, 0, 6deg);
-    border-color: hsl(var(--accent));
-    box-shadow: 0 20px 50px #00050848;
+    border-color: hsl(var(--border-hover));
+    box-shadow: 0 35px 90px hsl(var(--accent) / 0.25);
   }
 
   .tilt-card:hover::before {
@@ -577,16 +525,14 @@
 
   .contact-card {
     border-radius: calc(var(--radius) * 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid hsl(var(--border) / 0.6);
     padding: 1rem;
     background: linear-gradient(
       145deg,
-      rgba(14, 13, 13, 0.07),
-      rgba(12, 12, 12, 0.03)
+      hsl(var(--muted) / 0.7),
+      hsl(var(--muted) / 0.4)
     );
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.178);
-    position: relative;
-    overflow: hidden;
+    box-shadow: inset 0 0 20px hsl(var(--muted) / 0.5);
     transition:
       transform 250ms ease,
       border-color 200ms ease;
@@ -742,5 +688,42 @@
 
   .animate-scan {
     animation: scan 2s linear infinite;
+  }
+
+  /* Blinking Light Effect */
+  .active-light {
+    position: relative;
+    display: inline-flex;
+    height: 8px;
+    width: 8px;
+  }
+
+  .active-light::before {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: #22c55e; /* green-500 */
+    opacity: 0.75;
+    animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .active-light::after {
+    content: "";
+    position: relative;
+    display: inline-flex;
+    height: 8px;
+    width: 8px;
+    border-radius: 9999px;
+    background-color: #16a34a; /* green-600 */
+  }
+
+  @keyframes ping {
+    75%, 100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
   }
 }
