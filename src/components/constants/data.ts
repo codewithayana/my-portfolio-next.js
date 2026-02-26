@@ -122,7 +122,7 @@ export const PROJECTS = [
       "Engineered responsive portfolio with Next.js, TypeScript, and Tailwind CSS using server-side rendering, achieving 95+ Lighthouse score and 1.8-second page load time.\n Integrated GitHub and LeetCode APIs to display coding projects, contributions, and 100+ algorithmic solutions with automated real-time data synchronization.\nCrafted mobile-first UI with Tailwind CSS utility classes, achieving seamless responsiveness across all devices.\nLeveraged Next.js Image component and lazy loading strategies to reduce initial bundle size by 30%.",
 
     tech: ["Next.js ", "TypeScript", "Framer Motion", "Tailwind CSS", "GitHub API", "LeetCode API"],
-    link: "my-portfolio-next-js-ivory-sigma.vercel.app/",
+    link: "",
     github: "https://github.com/codewithayana/my-portfolio-next.js",
     image:"/modern porfolio.png",
     color: "hsla(26, 54%, 98%, 1.00)",
@@ -160,7 +160,7 @@ export const EXPERIENCE = [
     company: "codyinger Education",
     companyLink: "https://www.linkedin.com/in/codyingereducation/",
     role: "Full Stack Development Intern",
-    period: "Sept 2025 - Feb 2026 (Expected)",
+    period: "Sept 2025 - Mar 2026 ",
     location: "Onsite",
     description:
       "Built and shipped full-stack MERN applications end-to-end — handling everything from responsive React interfaces to secure, scalable Node.js backends. Designed and secured 150+ REST APIs using Express.js, Nest.js, and TypeScript with JWT authentication and role-based access control, ensuring zero unauthorized access. Optimized MongoDB and PostgreSQL performance through advanced indexing and query tuning, achieving 40% faster data retrieval. Deployed production applications on AWS, maintaining 90.5% uptime and 80%+ Jest test coverage across the codebase.",
