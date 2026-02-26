@@ -39,19 +39,19 @@ const Contact = () => {
     },
     SOCIAL_LINKS.github && {
       label: "GitHub",
-      value: SOCIAL_LINKS.github.replace("https://", ""),
+      value: SOCIAL_LINKS.github.replace("https://", "").replace("www.", ""),
       href: SOCIAL_LINKS.github,
       icon: FaGithub,
     },
     SOCIAL_LINKS.linkedin && {
       label: "LinkedIn",
-      value: SOCIAL_LINKS.linkedin.replace("https://", ""),
+      value: SOCIAL_LINKS.linkedin.replace("https://", "").replace("www.", ""),
       href: SOCIAL_LINKS.linkedin,
       icon: FaLinkedin,
     },
     SOCIAL_LINKS.leetcode && {
       label: "LeetCode",
-      value: SOCIAL_LINKS.leetcode.replace("https://", ""),
+      value: SOCIAL_LINKS.leetcode.replace("https://", "").replace("www.", ""),
       href: SOCIAL_LINKS.leetcode,
       icon: SiLeetcode,
     },
@@ -63,7 +63,7 @@ const Contact = () => {
     },
     SOCIAL_LINKS.instagram && {
       label: "Instagram",
-      value: SOCIAL_LINKS.instagram.replace("https://", ""),
+      value: SOCIAL_LINKS.instagram.replace("https://", "").replace("www.", ""),
       href: SOCIAL_LINKS.instagram,
       icon: Instagram,
     },
@@ -100,20 +100,7 @@ const Contact = () => {
     }
   };
 
-  const handleSpecialNavigation = (
-    event: MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
-    if (!href) return;
-    const trimmed = href.trim();
-    if (
-      typeof window !== "undefined" &&
-      (trimmed.startsWith("mailto:") || trimmed.startsWith("tel:"))
-    ) {
-      event.preventDefault();
-      window.location.href = trimmed;
-    }
-  };
+
 
   return (
     <section className="py-6 space-y-8">
@@ -158,14 +145,13 @@ const Contact = () => {
                   const linkClass = "group/link flex items-center gap-3 md:gap-4 rounded-2xl border border-transparent bg-foreground/[0.02] px-4 py-3 md:px-5 md:py-4 text-left transition-all duration-300 hover:bg-foreground/[0.04] hover:border-foreground/10 hover:translate-x-1";
 
                   if (item.href) {
-                    const isExternal = item.href.startsWith("http");
+                    const isExternal = item.href?.startsWith("http");
                     return (
                       <a
                         key={item.label}
                         href={item.href}
                         target={isExternal ? "_blank" : undefined}
                         rel={isExternal ? "noopener noreferrer" : undefined}
-                        onClick={(event) => !isExternal && handleSpecialNavigation(event, item.href!)}
                         className={linkClass}
                       >
                         {content}
@@ -231,7 +217,6 @@ const Contact = () => {
 
                 <a
                   href={emailHref}
-                  onClick={(event) => handleSpecialNavigation(event, emailHref)}
                   className="w-full inline-flex items-center justify-center gap-2 md:gap-3 rounded-2xl bg-foreground/5 border border-foreground/10 text-foreground text-[10px] md:text-xs font-bold font-mono tracking-[0.2em] py-4 md:py-5 transition-all duration-300 hover:bg-accent hover:text-background hover:border-accent hover:shadow-[0_20px_40px_rgba(var(--accent),0.2)] uppercase group"
                 >
                   <Mail className="w-3.5 h-3.5 md:w-4 h-4 group-hover:rotate-12 transition-transform" />

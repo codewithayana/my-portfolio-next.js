@@ -32,7 +32,7 @@ export const SOCIAL_LINKS = {
   resume:
     "/Ayana Full Stack 2026.pdf",
   phone: "+91 8129407173",
-  whatsapp: "https://wa.me/ 8129407173",
+  whatsapp: "https://wa.me/918129407173",
 };
 
 // Contact form endpoint (update with your own Formspree endpoint)
