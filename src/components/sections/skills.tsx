@@ -17,7 +17,7 @@ const SKILL_ICONS: Record<string, string> = {
   jQuery: "jquery",
   "Tailwind CSS": "tailwind",
   Bootstrap: "bootstrap",
-  "Framer Motion": "framermotion",
+  "Framer Motion": "framer",
 
   // Backend
   "Node.js": "nodejs",
@@ -27,7 +27,7 @@ const SKILL_ICONS: Record<string, string> = {
   JWT: "",
   WebSocket: "",
   GraphQL: "graphql",
-  "Socket.io": "socketio",
+  "Socket.io": "socketdotio",
 
   // Databases
   MongoDB: "mongodb",
@@ -93,8 +93,8 @@ const SkillBadge = ({ skill }: { skill: string }) => {
   "prettier",
   "jira",
   "eslint",
-  "socketio",
-  "framermotion",
+  "socketdotio",
+  "framer",
   "playwright",
   "graphql",
   "pnpm",
