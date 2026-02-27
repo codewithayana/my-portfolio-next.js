@@ -31,7 +31,7 @@ export const SOCIAL_LINKS = {
   // blog: "https://yourblog.com", // remove if you don't have a blog
   resume:
     "/Ayana Full Stack 2026.pdf",
-  phone: "+91 8129407173",
+  phone: "+91 81294 07173",
   whatsapp: "https://wa.me/918129407173",
 };
 
