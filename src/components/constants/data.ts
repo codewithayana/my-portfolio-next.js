@@ -22,9 +22,9 @@ export const USER_NAMES = {
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/codewithayana",
-  linkedin: "https://www.linkedin.com/in/ayanadinesh/",
+  linkedin: "https://www.linkedin.com/in/ayanadinesh",
   // twitter: "https://twitter.com/your-twitter",
-  leetcode: "https://leetcode.com/u/ayanadinesh/",
+  leetcode: "https://leetcode.com/u/ayanadinesh",
   // peerlist: "https://peerlist.io/your-peerlist", // remove or keep blank if you don't have a Peerlist profile
   instagram: "",
   email: "mailto:codewithayana@gmail.com",
