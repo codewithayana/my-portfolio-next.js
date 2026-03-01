@@ -31,7 +31,22 @@ const fetchLeetCodeStats = async (
 ): Promise<LeetCodeStats | null> => {
   try {
     const response = await fetch(`https://leetscan.vercel.app/${username}`);
-    return await response.json();
+    const data = await response.json();
+    console.log("LeetCode API response status", data);
+
+    // Map API fields to your interface
+    return {
+      totalSolved: data.totalSubmissions,
+      totalQuestions: data.totalQuestions,
+      easySolved: data.easySolved,
+      totalEasy: data.totalEasy,
+      mediumSolved: data.mediumSolved,
+      totalMedium: data.totalMedium,
+      hardSolved: data.hardSolved,
+      totalHard: data.totalHard,
+      ranking: data.ranking,
+      recentSubmissions: data.recentSubmissions,
+    };
   } catch {
     throw new Error("Failed to load LeetCode stats");
   }

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import { ChevronDown, Mail, FileText } from "lucide-react";
-import { SiLeetcode } from "react-icons/si";
+import { SiLeetcode, SiDevdotto } from "react-icons/si";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { ABOUT_ME, SOCIAL_LINKS } from "@/components/constants/data";
@@ -17,24 +17,29 @@ const SOCIAL_BUTTONS = [
   {
     href: SOCIAL_LINKS.github,
     label: "GitHub",
-    icon: <FaGithub className="w-5 h-5" />,
+    icon: <FaGithub className="w-5 h-5 hover:text-[#2b3137] dark:hover:text-white transition-colors" />,
   },
   {
     href: SOCIAL_LINKS.linkedin,
     label: "LinkedIn",
-    icon: <FaLinkedin className="w-5 h-5" />,
+    icon: <FaLinkedin className="w-5 h-5 text-[#0077B5]" />,
   },
   {
     href: SOCIAL_LINKS.leetcode,
     label: "LeetCode",
-    icon: <SiLeetcode className="w-5 h-5" />,
+    icon: <SiLeetcode className="w-5 h-5 text-[#FFA116]" />,
+  },
+  {
+    href: SOCIAL_LINKS.dev,
+    label: "DEV",
+    icon: <SiDevdotto className="w-5 h-5 text-[#0A0A0A] dark:text-white" />,
   },
   {
     href: SOCIAL_LINKS.resume,
     label: "Resume",
     icon: (
       <>
-        <FileText className="w-5 h-5" /> Resume
+        <FileText className="w-5 h-5 text-blue-500" /> Resume
       </>
     ),
     className: "flex items-center gap-2 font-medium px-6",
@@ -44,7 +49,7 @@ const SOCIAL_BUTTONS = [
     label: "Email",
     icon: (
       <>
-        <Mail className="w-5 h-5" /> Email
+        <Mail className="w-5 h-5 text-[#EA4335]" /> Email
       </>
     ),
     className: "flex items-center gap-2 font-medium px-6",
