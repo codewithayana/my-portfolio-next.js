@@ -9,7 +9,7 @@ import {
   Check,
   ChevronDown,
 } from "lucide-react";
-import { SiLeetcode, SiWhatsapp } from "react-icons/si";
+import { SiLeetcode, SiWhatsapp, SiDevdotto } from "react-icons/si";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { ABOUT_ME, SOCIAL_LINKS } from "../constants/data";
 
@@ -18,6 +18,7 @@ type ContactLink = {
   value: string;
   href?: string;
   icon: React.ComponentType<{ className?: string }>;
+  color?: string;
 };
 
 const Contact = () => {
@@ -36,36 +37,49 @@ const Contact = () => {
       value: emailAddress,
       href: SOCIAL_LINKS.email,
       icon: Mail,
+      color: "text-[#EA4335]",
     },
     SOCIAL_LINKS.github && {
       label: "GitHub",
       value: SOCIAL_LINKS.github.replace("https://", "").replace("www.", ""),
       href: SOCIAL_LINKS.github,
       icon: FaGithub,
+      color: "hover:text-[#2b3137] dark:hover:text-white",
     },
     SOCIAL_LINKS.linkedin && {
       label: "LinkedIn",
       value: SOCIAL_LINKS.linkedin.replace("https://", "").replace("www.", ""),
       href: SOCIAL_LINKS.linkedin,
       icon: FaLinkedin,
+      color: "text-[#0077B5]",
     },
     SOCIAL_LINKS.leetcode && {
       label: "LeetCode",
       value: SOCIAL_LINKS.leetcode.replace("https://", "").replace("www.", ""),
       href: SOCIAL_LINKS.leetcode,
       icon: SiLeetcode,
+      color: "text-[#FFA116]",
+    },
+    SOCIAL_LINKS.dev && {
+      label: "DEV",
+      value: SOCIAL_LINKS.dev.replace("https://", "").replace("www.", ""),
+      href: SOCIAL_LINKS.dev,
+      icon: SiDevdotto,
+      color: "text-[#0A0A0A] dark:text-white",
     },
     SOCIAL_LINKS.phone && {
       label: "Phone",
       value: SOCIAL_LINKS.phone,
       href: `tel:${SOCIAL_LINKS.phone.replace(/\s+/g, "")}`,
       icon: Phone,
+      color: "text-green-500",
     },
     SOCIAL_LINKS.instagram && {
       label: "Instagram",
       value: SOCIAL_LINKS.instagram.replace("https://", "").replace("www.", ""),
       href: SOCIAL_LINKS.instagram,
       icon: Instagram,
+      color: "text-[#E4405F]",
     },
   ].filter(Boolean) as ContactLink[];
 
@@ -129,7 +143,7 @@ const Contact = () => {
                   const content = (
                     <div className="flex items-center gap-4 md:gap-5 w-full">
                       <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-foreground/[0.03] border border-foreground/5 flex items-center justify-center group-hover/link:border-accent/30 group-hover/link:bg-accent/10 transition-all duration-300">
-                        <Icon className="w-4 h-4 md:w-5 md:h-5 group-hover/link:text-accent group-hover/link:scale-110 transition-all duration-300" />
+                        <Icon className={`w-4 h-4 md:w-5 md:h-5 ${item.color || "group-hover/link:text-accent"} group-hover/link:scale-110 transition-all duration-300`} />
                       </div>
                       <div className="space-y-1 flex-1">
                         <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-bold opacity-60">
