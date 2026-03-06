@@ -146,21 +146,20 @@ const Header = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
           <div className="contact-card">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="active-light"></span>
-              <p className="text-blue-500 uppercase tracking-[0.3em] text-[0.6rem]">
-                availability
-              </p>
-            </div>
+            <p className="text-blue-500 uppercase tracking-[0.3em] text-[0.6rem] mb-1">
+              availability
+            </p>
             <p className="font-semibold">
-              Open to remote collabs · 9:00 AM - 7:00 PM IST
+              Open to Job Opportunities & Freelance Projects.
             </p>
           </div>
           <div className="contact-card">
             <p className="text-blue-500 uppercase tracking-[0.3em] text-[0.6rem] mb-1">
               speciality
             </p>
-            <p className="font-semibold">Full Stack Development — Backend systems, secure APIs & responsive user interfaces</p>
+            <p className="font-semibold">
+              Scalable Architectures & Full Stack Solutions
+            </p>
           </div>
           <div className="contact-card">
             <p className="text-blue-500 uppercase tracking-[0.3em] text-[0.6rem] mb-1">

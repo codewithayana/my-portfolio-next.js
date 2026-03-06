@@ -49,7 +49,7 @@ const SKILL_ICONS: Record<string, string> = {
 
   // Testing
   Jest: "jest",
-  Playwright: "playwright",
+  Playwright: "",
   Postman: "postman",
   Supertest: "",
 
@@ -57,7 +57,7 @@ const SKILL_ICONS: Record<string, string> = {
   Git: "git",
   Swagger: "swagger",
   Figma: "figma",
-  "Adobe Photoshop": "photoshop",
+  "Adobe Photoshop": "adobephotoshop",
   Vite: "vite",
   "VS Code": "vscode",
   Jira: "jira",
@@ -95,12 +95,8 @@ const SkillBadge = ({ skill }: { skill: string }) => {
   "eslint",
   "socketdotio",
   "framer",
-  "playwright",
   "graphql",
-  "pnpm",
-  "yarn",
-  "npm",
-  "photoshop",
+  "adobephotoshop",
 ].includes(iconSlug);
 
   const iconUrl = isSimpleIcon

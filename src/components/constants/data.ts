@@ -29,10 +29,10 @@ export const SOCIAL_LINKS = {
   // peerlist: "https://peerlist.io/your-peerlist", // remove or keep blank if you don't have a Peerlist profile
   dev: "https://dev.to/ayanadinesh",
   instagram: "",
-  email: "mailto:codewithayana@gmail.com",
+  email: "mailto:ayanakd.official@gmail.com",
   // blog: "https://yourblog.com", // remove if you don't have a blog
   resume:
-    "/Ayana Full Stack 2026.pdf",
+    "/Ayana Full Stack 2026 .pdf",
   phone: "+91 81294 07173",
   whatsapp: "https://wa.me/918129407173",
 };

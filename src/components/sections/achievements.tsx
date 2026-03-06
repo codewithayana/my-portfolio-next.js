@@ -7,12 +7,12 @@ const PLACEHOLDER_BADGES = [
   //   description: "GitHub Foundations certification",
   //   imagePath: "https://images.credly.com/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png"
   // },
-  // {
-  //   title: "50 Days Badge",
-  //   platform: "LeetCode",
-  //   description: "Solved problems for 50 consecutive days",
-  //   imagePath: "https://assets.leetcode.com/static_assets/others/2550.gif",
-  // },
+  {
+    title: "50 Days Badge",
+    platform: "LeetCode",
+    description: "Solved problems for 50 consecutive days",
+    imagePath: "https://assets.leetcode.com/static_assets/others/2550.gif",
+  },
   // {
   //   title: "100 Days Badge",
   //   platform: "LeetCode",
