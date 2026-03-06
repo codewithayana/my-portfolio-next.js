@@ -5,7 +5,7 @@ export const ABOUT_ME = {
   name: "Ayana Dinesh",
   title: "Full Stack Developer",
   location: "Irinjalakuda, Thrissur, Kerala, India",
-  email: "codewithayana@gmail.com",
+  email: "ayanakd.official@gmail.com",
   description: [
     "Hey! I'm Ayana Dinesh, a full stack developer passionate about creating secure and scalable web applications for both the frontend and backend. I enjoy breaking down complex problems and transforming ideas into efficient APIs and responsive user interfaces.",
     "I'm especially interested in secure authentication, RESTful API design, and building data-driven solutions. I aim to create full stack applications that are not just functional, but also maintainable, modern, and ready to scale.",
